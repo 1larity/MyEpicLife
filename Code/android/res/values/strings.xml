@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyEpicLife</string>
+  <string name="eventname">Event</string>
+  <string name="empty_string">No Events Loaded</string>
+</resources>

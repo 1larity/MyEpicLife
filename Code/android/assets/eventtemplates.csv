@@ -1,0 +1,42 @@
+1;Stop Smoking;1;cigarette;0;1-day;Health and Fitness;Did you smoke any cigarettes today?;log@1-day;Helps give up smoking by tracking the number of days you abstain from smoking. Stopping smoking improves circulation, breathing and reduces the risk of heart disease and cancer.
+2;Clean Teeth Morning;0;Session;25800000;1-day;Health and Fitness;Did you clean your teeth twice today?;arbitary@1-day;Keep your teeth and gums healthy, and your smile bright with this event. Research indicates that good gum health reduces the risk of heart disease.
+3;Five A Day;0;Portions;0;1-day;Health and Fitness;Did you eat five portions of fruit or vegetables?;log@1-day;Fruit and and vegetables are part of a healthy diet to ensure adequate vitamins consumption and digestive fitness. Health organisations consider a portion of fruit to be 150 g and a portion of vegetables to be 75g (excluding potatoes and other high starch tubers).
+4;Sleep By Midnight;0;none;82740000;1-day;Health and Fitness;Did you get to bed by 12pm yesterday?;arbitary@1-day;Getting quality sleep is important to our well-being. According to research, people who sleep between 6.5 and 7.5 hours a night.
+5;Floss Teeth Morning;0;Session;25500000;1-day;Health and Fitness;Did you floss your teeth before brushing?;arbitary@1-day;Flossing your teeth is as important as brushing. It reaches places brushing doesn't and improves the effectiveness of brushing. Flossing improves gum health as well which is linked with improved heart health.
+6;Exercise;0;minutes;0;1-day;Health and Fitness;Did you exercise today?;arbitary@1-day;Exercise is good.
+7;Reading;0;minutes;0;1-day;Lifestyle;Have you read for 30 minutes or more today?;arbitary@1-day;Besides being informative, relaxing and entertaining, reading improves your memory, vocabulary and analytical thinking.
+8;Check The News;0;none;0;1-day;Lifestyle;Did you check the news today?;arbitary@1-day;Its good to keep up with what's going on in the world, and gives you something to talk about over the water cooler.
+9;Prepare A To-Do List;0;none;0;1-day;Lifestyle;Did you prepare a to-do list of goals you wanted to achieve this week?;arbitary@1-week;Having a to-do list is a simple and effective way of making sure you complete tasks, instead of forgetting them.
+10;Tidy Up;0;none;0;1-day;Lifestyle;Did you tidy up this week?;arbitary@1-week;Description.
+11;Pay Mortgage;0;£/$;0;1-day;Financial;Have you paid your Mortgage instalment this month?;arbitary@1-month;Description.
+12;Pay Rent;0;£/$;0;1-day;Financial;Have you paid your Mortgage instalment this %P?;arbitary@1-week;Description.
+13;Pay Road Tax;0;£/$;0;1-day;Legal;Your Road Tax was due on %D, did you pay it in time?;arbitary@1-year;Paying your Road Tax for your vehicle is mandatory in some countries. In the UK not having road tax may also invalidate your car insurance in the case of an accident.
+14;MOT test;0;Test;0;1-day;Legal;Your car needed to be tested for safety on %D, did it pass the test?;arbitary@1-year;Description.
+15;MOT retest;0;Test;0;1-day;Legal;Your car needed to be re-tested for safety on %D, did it pass the test?;arbitary@14-days;If your car fails its MOT test, you have 14 days to get it fixed and have a free retest.
+16;Weekday wake up;0;Alarm;25200000;1-day;Alarm;Wakey-wakey rise and shine!;Weekly@motuwethfr;8 am weekday wake up alarm, without snooze function.
+17;Weekend wake up;0;Alarm;32400000;1-day;Alarm;Just 5 more Minutes;Weekly@sasu;10 am weekday wake up alarm, without snooze function.
+18;Visit the Cinema;0;Going-out;0;1-day;Entertainment;Daily question not set.;none@1-off;Description.
+19;WoW raid;0;Raid;68400000;1-day;Games;Daily question not set.;Weekly@mosa;Description.
+20;Football:- Playing;0;Match;0;1-day;Sports Playing;Daily question not set.;arbitary@1-week;Description.
+21;Football:- Spectating;0;Match;0;1-day;Sports Spectating;Daily question not set.;arbitary@1-week;Description.
+22;Tennis:- Playing;0;Match;0;1-day;Sports Playing;Daily question not set.;arbitary@1-week;Description.
+23;Tennis:- Spectating;0;Match;0;1-day;Sports Spectating;Daily question not set.;arbitary@1-week;Description.
+24;Formula1:-Spectating;0;Match;0;1-day;Sports Spectating;Daily question not set.;arbitary@1-week;Description.
+25;Vitamins;0;Pills;0;1-day;Health and Fitness;Have you taken your vitamins today?;arbitary@1-day;Most people should get all the nutrients they need by eating a varied and balanced diet, but sometimes that's just not possible, taking vitamin supplements can help you get the right vitamins. 
+26;Attend School;0;Attendance;0;1-day;Education;Daily question not set.;arbitary@1-day;Every body needs an education!
+27;Attend University;0;Attendance;0;1-day;Education;Daily question not set.;arbitary@1-day;Every body needs an education!
+28;Drop children At School;0;Attendance;0;1-day;Education;Daily question not set.;arbitary@1-day;Every body needs an education!
+29;Haircut;0;Session;0;1-day;Lifestyle;Daily question not set.;arbitary@2-months;Description.
+30;Hair Styling;0;Session;0;1-day;Lifestyle;Daily question not set.;arbitary@2-week;Description.
+31;Manicure;0;Session;0;1-day;Lifestyle;Daily question not set.;arbitary@6-month;Description.
+32;Clean the car;0;Session;0;1-day;Lifestyle;Daily question not set.;arbitary@1-month;Description.
+33;Walk the Dog;0;Walk;0;1-day;Lifestyle;Daily question not set.;arbitary@1-day;Description.
+34;Water Houseplants;0;;0;1-day;Lifestyle;Daily question not set.;arbitary@1-week;Description.
+35;Water Garden;0;;0;1-day;Lifestyle;Daily question not set.;arbitary@1-week;Description.
+36;Floss Teeth Evening;0;Session;82200000;1-day;Health and Fitness;Did you floss your teeth before brushing?;arbitary@1-day;Flossing your teeth is as important as brushing. It reaches places brushing doesn't and improves the effectiveness of brushing. Flossing improves gum health as well which is linked with improved heart health.
+37;Clean Teeth Evening;0;Session;82500000;1-day;Health and Fitness;Did you clean your teeth twice today?;arbitary@1-day;Keep your teeth and gums healthy, and your smile bright with this event. Research indicates that good gum health reduces the risk of heart disease.
+38;WoW garrison resources;0;Raid;61200000;1-day;Games;Did you collect your garrison resources on %D?;Arbitary@3-day;Your garrison produces 144 garrison resources per day, with a cap of 500 resources. This mission will task you with collecting the resources every 3 days, before they are capped.
+39;WoW social raid.;0;Raid;68400000;1-day;Games;Did you attend the WoW social raid on %D?;Weekly@mo;Description.
+40;WoW mount raid.;0;Raid;68400000;1-day;Games;Did you attend the WoW mount raid on %D?;Weekly@sa;Description.
+41;Beer Counter;1;can;0;1-day;Health and Fitness;Did you drink any beer today?;log@1-day;Track your beer consumption.
+41;Joint Counter;1;can;0;1-day;Health and Fitness;Did you smoke any joints today?;log@1-day;Track your dope consumption.

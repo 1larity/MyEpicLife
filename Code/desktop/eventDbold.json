@@ -1,0 +1,673 @@
+[
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 229338018,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434748507162,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434750908241,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434752304024,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434753095076,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434753583519,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434753785039,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434755465782,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1434791189698,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1434792166532,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1434792247530,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1434882748597,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1434921311637,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 76500000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435007700000,
+	"lastNotification": 1434921300000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 231929980,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434752304274,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434753095191,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434753583691,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434753785177,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434755465929,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434791190076,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434792166691,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1434792247716,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1434882785068,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 79080000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435010280000,
+	"lastNotification": 1434923880000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 233895091,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434753095266,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434753583785,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434753785230,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434755465996,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434791190325,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434792166937,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434792247941,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1434882795955,
+			"completionStatus": "cancelled"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 81060000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435012260000,
+	"lastNotification": 1434925860000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 234304085,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434753583900,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434753785339,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434755466072,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434791190466,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434792167150,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434792248145,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434882812354,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 81480000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435012680000,
+	"lastNotification": 1434926280000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 229381610,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434754511822,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882774849,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "Session",
+	"eventName": "Clean Teeth Evening",
+	"catagoryName": "Health and Fitness",
+	"description": "Keep your teeth and gums healthy, and your smile bright with this event. Research indicates that good gum health reduces the risk of heart disease.",
+	"alarmTime": 82500000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435013700000,
+	"lastNotification": 1434927300000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 229361852,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434754782937,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882754167,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "none",
+	"eventName": "Sleep By Midnight",
+	"catagoryName": "Health and Fitness",
+	"description": "Getting quality sleep is important to our well-being. According to research, people who sleep between 6.5 and 7.5 hours a night.",
+	"alarmTime": 82740000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435013940000,
+	"lastNotification": 1434927540000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 236321145,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434755466181,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434791190708,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434792167410,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434792248326,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434882833122,
+			"completionStatus": "cancelled"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": -2940000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435014660000,
+	"lastNotification": 1434928260000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 235090844,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434789456034,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882824511,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434960608653,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "Session",
+	"eventName": "Clean Teeth Morning",
+	"catagoryName": "Health and Fitness",
+	"description": "Keep your teeth and gums healthy, and your smile bright with this event. Research indicates that good gum health reduces the risk of heart disease.",
+	"alarmTime": 29400000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435047000000,
+	"lastNotification": 1434960600000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 271647117,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434791190830,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434792167561,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434792248553,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434882856111,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434963725868,
+			"completionStatus": "cancelled"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 32520000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435050120000,
+	"lastNotification": 1434963720000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 272687536,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434792167721,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434792248710,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434882870064,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434964627006,
+			"completionStatus": "cancelled"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 33420000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435051020000,
+	"lastNotification": 1434964620000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 273077779,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434792167967,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434792248962,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434882872967,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434965048768,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 33840000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435051440000,
+	"lastNotification": 1434965040000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1434792430793,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434793878321,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882883975,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434965284430,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "Pills",
+	"eventName": "Vitamins",
+	"catagoryName": "Health and Fitness",
+	"description": "Most people should get all the nutrients they need by eating a varied and balanced diet, but sometimes that's just not possible, taking vitamin supplements can help you get the right vitamins.",
+	"alarmTime": 34080000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435051680000,
+	"lastNotification": 1434965280000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1434969107568,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434927600000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434969187683,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "Session",
+	"eventName": "Floss Teeth Morning",
+	"catagoryName": "Health and Fitness",
+	"description": "Flossing your teeth is as important as brushing. It reaches places brushing doesn't and improves the effectiveness of brushing. Flossing improves gum health as well which is linked with improved heart health.",
+	"alarmTime": 37980000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435055580000,
+	"lastNotification": 1434969180000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1434889025345,
+	"templateUid": null,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434841200000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434890417478,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434975487178,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 44280000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435061880000,
+	"lastNotification": 1434975480000
+}
+]

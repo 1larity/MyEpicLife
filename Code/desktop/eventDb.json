@@ -1,0 +1,2390 @@
+[
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1435332497888,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "log@1-day",
+	"firstOccurance": 1435332497886,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1435332590473,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1435345436454,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435345437455,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435436048169,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435440422480,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435443968665,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435512999445,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435771282436,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435782653185,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435332655657,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435440426101,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435443977404,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "Portions",
+	"eventName": "Five A Day LIVE",
+	"catagoryName": "Health and Fitness",
+	"description": "Fruit and and vegetables are part of a healthy diet to ensure adequate vitamins consumption and digestive fitness. Health organisations consider a portion of fruit to be 150 g and a portion of vegetables to be 75g (excluding potatoes and other high starch tubers).",
+	"alarmTime": 0,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "log",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 0,
+	"lastNotification": 0
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1435842373758,
+	"templateUid": null,
+	"goodBad": 1,
+	"frequency": "log@1-day",
+	"firstOccurance": 1435842373758,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1435868010056,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1435868013019,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435868019871,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435868022450,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435868031212,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435871779237,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435868016825,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435868035878,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435871783796,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "can",
+	"eventName": "Beer Counter",
+	"catagoryName": "Health and Fitness",
+	"description": "Track your beer consumption.",
+	"alarmTime": 0,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "log",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 0,
+	"lastNotification": 0
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1435844850754,
+	"templateUid": null,
+	"goodBad": 1,
+	"frequency": "log@1-day",
+	"firstOccurance": 1435844850754,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1435705200000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1435618800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435618800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435532400000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435532400000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435532400000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435446000000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435446000000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435446000000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435446000000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435359600000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435359600000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435359600000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435359600000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 15,
+			"completionDate": 1435359600000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 16,
+			"completionDate": 1435273200000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 17,
+			"completionDate": 1435273200000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 18,
+			"completionDate": 1435273200000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 19,
+			"completionDate": 1435273200000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 20,
+			"completionDate": 1435273200000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 21,
+			"completionDate": 1435273200000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 22,
+			"completionDate": 1435186800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 23,
+			"completionDate": 1435186800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 24,
+			"completionDate": 1435186800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 25,
+			"completionDate": 1435186800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 26,
+			"completionDate": 1435186800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 27,
+			"completionDate": 1435186800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 28,
+			"completionDate": 1435186800000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 29,
+			"completionDate": 1434063600000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 30,
+			"completionDate": 1434150000000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 31,
+			"completionDate": 1434236400000,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 32,
+			"completionDate": 1434322800000,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435844981898,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435845112120,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435845892234,
+			"awardId": 31
+		},
+		{
+			"uid": 4,
+			"awardedDate": 1435845903374,
+			"awardId": 32
+		},
+		{
+			"uid": 5,
+			"awardedDate": 1435848797824,
+			"awardId": 3
+		},
+		{
+			"uid": 6,
+			"awardedDate": 1435848846051,
+			"awardId": 4
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "candy",
+	"eventName": "Candy Counter",
+	"catagoryName": "Health and Fitness",
+	"description": "Track your candy consumption.",
+	"alarmTime": 0,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "log",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 0,
+	"lastNotification": 0
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1435313690097,
+	"templateUid": null,
+	"goodBad": 1,
+	"frequency": "log@1-day",
+	"firstOccurance": 1435273200000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1435313702296,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1435317940682,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435330816664,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435354026213,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435354027551,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435359819151,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435406101028,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435414979585,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435421997107,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435433159315,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435436035765,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435487881447,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435492696737,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435513009239,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 15,
+			"completionDate": 1435516505053,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 16,
+			"completionDate": 1435520775204,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 17,
+			"completionDate": 1435525339922,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 18,
+			"completionDate": 1435531895793,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 19,
+			"completionDate": 1435571933325,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 20,
+			"completionDate": 1435575438669,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 21,
+			"completionDate": 1435579035213,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 22,
+			"completionDate": 1435592239081,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 23,
+			"completionDate": 1435597360160,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 24,
+			"completionDate": 1435605991208,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 25,
+			"completionDate": 1435606017409,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 26,
+			"completionDate": 1435610704582,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 27,
+			"completionDate": 1435669163691,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 28,
+			"completionDate": 1435669164252,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 29,
+			"completionDate": 1435669164782,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 30,
+			"completionDate": 1435686393198,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 31,
+			"completionDate": 1435759091207,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 32,
+			"completionDate": 1435771072920,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 33,
+			"completionDate": 1435774670405,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 34,
+			"completionDate": 1435778457264,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 35,
+			"completionDate": 1435782172440,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 36,
+			"completionDate": 1435788572119,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 37,
+			"completionDate": 1435791095888,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 38,
+			"completionDate": 1435835795178,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 39,
+			"completionDate": 1435838467836,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 40,
+			"completionDate": 1435842483707,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 41,
+			"completionDate": 1435868437531,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435314113407,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435354033608,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435359862885,
+			"awardId": 31
+		},
+		{
+			"uid": 4,
+			"awardedDate": 1435436045767,
+			"awardId": 32
+		},
+		{
+			"uid": 5,
+			"awardedDate": 1435579041919,
+			"awardId": 3
+		},
+		{
+			"uid": 6,
+			"awardedDate": 1435759094868,
+			"awardId": 4
+		},
+		{
+			"uid": 7,
+			"awardedDate": 1435868455671,
+			"awardId": 5
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "cigarette",
+	"eventName": "Smoking counter",
+	"catagoryName": "Health and Fitness",
+	"description": "Helps give up smoking by tracking the number of days you abstain from smoking. Stopping smoking improves circulation, breathing and reduces the risk of heart disease and cancer.",
+	"alarmTime": 36840000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "log",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435400040000,
+	"lastNotification": 1435313640000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1435314285024,
+	"templateUid": null,
+	"goodBad": 1,
+	"frequency": "log@1-day",
+	"firstOccurance": 1435273200000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1435321925363,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1435340748481,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435354007626,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435359869327,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435414971210,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435414980854,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435421999440,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435433157775,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435436040645,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435516507554,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435520777257,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435525338506,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435531916072,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435579044822,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 15,
+			"completionDate": 1435605993489,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 16,
+			"completionDate": 1435610703820,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 17,
+			"completionDate": 1435686395880,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 18,
+			"completionDate": 1435750663247,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 19,
+			"completionDate": 1435771078154,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 20,
+			"completionDate": 1435774665310,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 21,
+			"completionDate": 1435778459101,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 22,
+			"completionDate": 1435782179042,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 23,
+			"completionDate": 1435793065101,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435321948813,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435427954975,
+			"awardId": 31
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435428643632,
+			"awardId": 2
+		},
+		{
+			"uid": 4,
+			"awardedDate": 1435520785038,
+			"awardId": 32
+		},
+		{
+			"uid": 5,
+			"awardedDate": 1435778512051,
+			"awardId": 3
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "cigarette",
+	"eventName": "Burger Tally",
+	"catagoryName": "Health and Fitness",
+	"description": "Count how many burgers you had today",
+	"alarmTime": 37440000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "log",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435400640000,
+	"lastNotification": 1435314240000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 231929980,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434752304274,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434753095191,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434753583691,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434753785177,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434755465929,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434791190076,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434792166691,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1434792247716,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1434882785068,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435057728387,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435265908053,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435308374653,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435359786087,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435443962244,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 15,
+			"completionDate": 1435531900113,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 16,
+			"completionDate": 1435669218091,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 17,
+			"completionDate": 1435749031692,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 18,
+			"completionDate": 1435787886337,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435063909103,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435063919170,
+			"awardId": 31
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435063929220,
+			"awardId": 2
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 79080000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435874280000,
+	"lastNotification": 1435787880000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 233895091,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434753095266,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434753583785,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434753785230,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434755465996,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434791190325,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434792166937,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434792247941,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1434882795955,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435057740070,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435265918819,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435308386803,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435359810685,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435444280864,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435531908952,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 15,
+			"completionDate": 1435669228723,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 16,
+			"completionDate": 1435749048529,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 17,
+			"completionDate": 1435789865716,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308526369,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308535036,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435532619853,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 81060000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435876260000,
+	"lastNotification": 1435789860000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 234304085,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434753583900,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434753785339,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434755466072,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434791190466,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434792167150,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434792248145,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434882812354,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435057749820,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435266047925,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435308401086,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435359822485,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435444699825,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435532229187,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435669237669,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 15,
+			"completionDate": 1435749051408,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 16,
+			"completionDate": 1435790285360,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308563386,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308575703,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435445557726,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 81480000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435876680000,
+	"lastNotification": 1435790280000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 229381610,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434754511822,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882774849,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435057758737,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435266057954,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435308404386,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435359832918,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435445710786,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435532566633,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435686401607,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435749062554,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435791304989,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308585119,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308596353,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435359873277,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "Session",
+	"eventName": "Clean Teeth Evening",
+	"catagoryName": "Health and Fitness",
+	"description": "Keep your teeth and gums healthy, and your smile bright with this event. Research indicates that good gum health reduces the risk of heart disease.",
+	"alarmTime": 82500000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435877700000,
+	"lastNotification": 1435791300000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 229361852,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434754782937,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882754167,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435057774037,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435266067154,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435308414353,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435359843035,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435445950526,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435532577512,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435686415008,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435749094933,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435791544642,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308604336,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308617569,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435359882894,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "none",
+	"eventName": "Sleep By Midnight",
+	"catagoryName": "Health and Fitness",
+	"description": "Getting quality sleep is important to our well-being. According to research, people who sleep between 6.5 and 7.5 hours a night.",
+	"alarmTime": 82740000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435877940000,
+	"lastNotification": 1435791540000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 236321145,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434755466181,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434791190708,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434792167410,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434792248326,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434882833122,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435057796970,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435266078138,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435308427103,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435396033013,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435446672952,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435533071133,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435686420337,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435749100719,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435792264250,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308640686,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308646036,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435533079754,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": -2940000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435878660000,
+	"lastNotification": 1435792260000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1435063932870,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "Weekly@motuwethfr",
+	"firstOccurance": 1435014000000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1435063939653,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1435064442128,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435064452678,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435064457228,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435064467628,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435065262722,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435265891603,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435308435569,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435406105902,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435686430127,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435749112732,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435820421902,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308654986,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308670303,
+			"awardId": 31
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435308674836,
+			"awardId": 2
+		},
+		{
+			"uid": 4,
+			"awardedDate": 1435749192489,
+			"awardId": 32
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "Alarm",
+	"eventName": "Weekday wake up",
+	"catagoryName": "Alarm",
+	"description": "8 am weekday wake up alarm, without snooze function.",
+	"alarmTime": 25200000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "Weekly",
+		"repeatDuration": 0,
+		"repeatUnit": "motuwethfr"
+	},
+	"nextNotification": 1435906800000,
+	"lastNotification": 1435820400000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 235090844,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434789456034,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882824511,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434960608653,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435057807920,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435266090021,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435308446253,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435414936021,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435485001380,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435571795491,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435686440423,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435749126597,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435824619945,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308454936,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308707453,
+			"awardId": 31
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435308715203,
+			"awardId": 2
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "Session",
+	"eventName": "Clean Teeth Morning",
+	"catagoryName": "Health and Fitness",
+	"description": "Keep your teeth and gums healthy, and your smile bright with this event. Research indicates that good gum health reduces the risk of heart disease.",
+	"alarmTime": 29400000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435911000000,
+	"lastNotification": 1435824600000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 271647117,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434791190830,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434792167561,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434792248553,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434882856111,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434963725868,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435057817987,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435266097154,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435314022046,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435414944350,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435485008985,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435571796879,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435686450122,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435749131728,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435827735624,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308469019,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435428764086,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435571980807,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 32520000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435914120000,
+	"lastNotification": 1435827720000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 272687536,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434792167721,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434792248710,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434882870064,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434964627006,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435057829387,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435266107488,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435314030813,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435414954567,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435485019871,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435571938028,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435686460313,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435749147273,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435828800666,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308475119,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435485104425,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435571988065,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 33420000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435915020000,
+	"lastNotification": 1435828620000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 273077779,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434792167967,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434792248962,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434882872967,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434965048768,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435057841870,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435266118854,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435314042629,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435414965285,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435485061569,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435571950273,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435686473091,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435749150879,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435829051594,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308501436,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435429338231,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435485108385,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 33840000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435915440000,
+	"lastNotification": 1435829040000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1434792430793,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434754800000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434793878321,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434882883975,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434965284430,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435057847937,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435266127654,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435314052329,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435414974180,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435485079784,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435571975786,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435686482498,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1435749165020,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1435829291615,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435308506603,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435308519503,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435314062763,
+			"awardId": 31
+		},
+		{
+			"uid": 4,
+			"awardedDate": 1435749201686,
+			"awardId": 32
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "Pills",
+	"eventName": "Vitamins",
+	"catagoryName": "Health and Fitness",
+	"description": "Most people should get all the nutrients they need by eating a varied and balanced diet, but sometimes that's just not possible, taking vitamin supplements can help you get the right vitamins.",
+	"alarmTime": 34080000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435915680000,
+	"lastNotification": 1435829280000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1434969107568,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434927600000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434969187683,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1435057865820,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1435266136821,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1435315473622,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1435422004919,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1435487877672,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1435575431368,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1435686566285,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1435749174949,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1435833196733,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435057872970,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435429349717,
+			"awardId": 2
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435492688009,
+			"awardId": 31
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "Session",
+	"eventName": "Floss Teeth Morning",
+	"catagoryName": "Health and Fitness",
+	"description": "Flossing your teeth is as important as brushing. It reaches places brushing doesn't and improves the effectiveness of brushing. Flossing improves gum health as well which is linked with improved heart health.",
+	"alarmTime": 37980000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435919580000,
+	"lastNotification": 1435833180000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 229338018,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "arbitary@1-day",
+	"firstOccurance": 1434668400000,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1434748507162,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 2,
+			"completionDate": 1434750908241,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 3,
+			"completionDate": 1434752304024,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 4,
+			"completionDate": 1434753095076,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 5,
+			"completionDate": 1434753583519,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 6,
+			"completionDate": 1434753785039,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 7,
+			"completionDate": 1434755465782,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 8,
+			"completionDate": 1434791189698,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 9,
+			"completionDate": 1434792166532,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 10,
+			"completionDate": 1434792247530,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 11,
+			"completionDate": 1434882748597,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 12,
+			"completionDate": 1434921311637,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 13,
+			"completionDate": 1435057719481,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 14,
+			"completionDate": 1435265905303,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 15,
+			"completionDate": 1435308366329,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 16,
+			"completionDate": 1435353994500,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 17,
+			"completionDate": 1435440412947,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 18,
+			"completionDate": 1435531890373,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 19,
+			"completionDate": 1435669212897,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 20,
+			"completionDate": 1435749020582,
+			"completionStatus": "completed"
+		},
+		{
+			"uid": 21,
+			"completionDate": 1435785307451,
+			"completionStatus": "cancelled"
+		},
+		{
+			"uid": 22,
+			"completionDate": 1435871724992,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1435057889920,
+			"awardId": 1
+		},
+		{
+			"uid": 2,
+			"awardedDate": 1435057913770,
+			"awardId": 31
+		},
+		{
+			"uid": 3,
+			"awardedDate": 1435062107616,
+			"awardId": 2
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "minutes",
+	"eventName": "Exercise",
+	"catagoryName": "Health and Fitness",
+	"description": "Exercise is good.",
+	"alarmTime": 76500000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "arbitary",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 1435958100000,
+	"lastNotification": 1435871700000
+},
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1435842417048,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "Weekly@sasu",
+	"firstOccurance": 1435791600000,
+	"completionList": [],
+	"awardList": [],
+	"reminderPeriod": "1-day",
+	"unitType": "Alarm",
+	"eventName": "Weekend wake up",
+	"catagoryName": "Alarm",
+	"description": "10 am weekday wake up alarm, without snooze function.",
+	"alarmTime": 32400000,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "Weekly",
+		"repeatDuration": 0,
+		"repeatUnit": "sasu"
+	},
+	"nextNotification": 1436086800000,
+	"lastNotification": 1436000400000
+}
+]

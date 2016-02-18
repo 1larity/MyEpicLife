@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="100dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="I am a floating Activity"
+        android:textAlignment="center"
+        android:gravity="center" 
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView1" >
+
+        <Button
+            android:id="@+id/buttonComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Complete" />
+
+        <Button
+            android:id="@+id/buttonPostpone"
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
+            android:text="Postpone" />
+
+        <Button
+            android:id="@+id/buttonAbort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abort" />
+
+    </LinearLayout>
+
+</RelativeLayout>

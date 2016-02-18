@@ -1,0 +1,192 @@
+
+uiskinhifi.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+check-off
+  rotate: false
+  xy: 313, 39
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+check-on
+  rotate: false
+  xy: 338, 39
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+cursor
+  rotate: false
+  xy: 142, 21
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+default-pane
+  rotate: false
+  xy: 79, 8
+  size: 5, 3
+  split: 1, 1, 1, 1
+  orig: 5, 3
+  offset: 0, 0
+  index: -1
+default-rect-pad
+  rotate: false
+  xy: 79, 8
+  size: 5, 3
+  split: 1, 1, 1, 1
+  orig: 5, 3
+  offset: 0, 0
+  index: -1
+default-pane-noborder
+  rotate: false
+  xy: 255, 29
+  size: 1, 1
+  split: 0, 0, 0, 0
+  orig: 1, 1
+  offset: 0, 0
+  index: -1
+default-rect
+  rotate: false
+  xy: 220, 29
+  size: 34, 34
+  split: 5, 5, 5, 6
+  orig: 34, 34
+  offset: 0, 0
+  index: -1
+default-rect-down
+  rotate: false
+  xy: 220, 25
+  size: 3, 3
+  split: 1, 1, 1, 1
+  orig: 3, 3
+  offset: 0, 0
+  index: -1
+default-round
+  rotate: false
+  xy: 181, 25
+  size: 38, 38
+  split: 9, 10, 9, 8
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+default-round-down
+  rotate: false
+  xy: 142, 25
+  size: 38, 38
+  split: 9, 10, 9, 9
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+default-round-large
+  rotate: false
+  xy: 388, 43
+  size: 20, 20
+  split: 4, 4, 5, 4
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+default-scroll
+  rotate: false
+  xy: 363, 39
+  size: 24, 24
+  split: 4, 4, 4, 4
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+textfield
+  rotate: false
+  xy: 363, 39
+  size: 24, 24
+  split: 4, 4, 4, 4
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+default-select
+  rotate: false
+  xy: 1, 1
+  size: 77, 62
+  split: 9, 36, 8, 8
+  orig: 77, 62
+  offset: 0, 0
+  index: -1
+default-select-selection
+  rotate: false
+  xy: 255, 31
+  size: 32, 32
+  split: 5, 4, 5, 5
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+selection
+  rotate: false
+  xy: 255, 31
+  size: 32, 32
+  split: 5, 4, 5, 5
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+default-slider
+  rotate: false
+  xy: 409, 49
+  size: 14, 14
+  split: 5, 5, 6, 5
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+default-slider-knob
+  rotate: false
+  xy: 288, 27
+  size: 24, 36
+  orig: 24, 36
+  offset: 0, 0
+  index: -1
+default-splitpane-vertical
+  rotate: false
+  xy: 454, 47
+  size: 8, 16
+  split: 3, 3, 6, 6
+  orig: 8, 16
+  offset: 0, 0
+  index: -1
+default-splitpane
+  rotate: false
+  xy: 454, 47
+  size: 8, 16
+  split: 3, 3, 6, 6
+  orig: 8, 16
+  offset: 0, 0
+  index: -1
+default-window
+  rotate: false
+  xy: 79, 12
+  size: 62, 51
+  split: 0, 0, 46, 0
+  orig: 62, 51
+  offset: 0, 0
+  index: -1
+tree-minus
+  rotate: false
+  xy: 424, 49
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+tree-plus
+  rotate: false
+  xy: 439, 49
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+white
+  rotate: false
+  xy: 313, 35
+  size: 3, 3
+  orig: 3, 3
+  offset: 0, 0
+  index: -1

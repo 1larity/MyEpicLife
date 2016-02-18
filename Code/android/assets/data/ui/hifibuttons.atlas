@@ -1,0 +1,160 @@
+
+hifibuttons.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+achieholopressed
+  rotate: false
+  xy: 1, 775
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+achieholoup
+  rotate: false
+  xy: 1, 646
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+additemholopressed
+  rotate: false
+  xy: 130, 775
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+additemholoup
+  rotate: false
+  xy: 1, 517
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+calendarholopressed
+  rotate: false
+  xy: 130, 646
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+calendarholoup
+  rotate: false
+  xy: 259, 775
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+cancelholopressed
+  rotate: false
+  xy: 1, 388
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+cancelholoup
+  rotate: false
+  xy: 130, 517
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+deleteholopressed
+  rotate: false
+  xy: 259, 646
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+deleteholoup
+  rotate: false
+  xy: 388, 775
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+doneholopressed
+  rotate: false
+  xy: 1, 259
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+doneholoup
+  rotate: false
+  xy: 130, 388
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+editholopressed
+  rotate: false
+  xy: 259, 517
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+editholoup
+  rotate: false
+  xy: 388, 646
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+eventholopressed
+  rotate: false
+  xy: 517, 775
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+eventholoup
+  rotate: false
+  xy: 1, 130
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+helpholopressed
+  rotate: false
+  xy: 130, 259
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+helpholoup
+  rotate: false
+  xy: 259, 388
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+neweventholopressed
+  rotate: false
+  xy: 388, 517
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+neweventholoup
+  rotate: false
+  xy: 517, 646
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+optionsholopressed
+  rotate: false
+  xy: 646, 775
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+optionsholoup
+  rotate: false
+  xy: 1, 1
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1

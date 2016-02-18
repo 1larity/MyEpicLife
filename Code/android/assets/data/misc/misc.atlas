@@ -1,0 +1,14 @@
+
+misc.png
+size: 64,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+default-round-down
+  rotate: false
+  xy: 2, 2
+  size: 38, 38
+  split: 9, 10, 9, 9
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
