@@ -17,7 +17,23 @@ public class AwardsData {
 	// ** retrieve asset catalogue from database **//*
 	public void getAwardDefinitions() {
 		FileHandle file = Gdx.files.internal("awarddefs.csv");
-		String fileData = file.readString();
+		String fileData="";
+
+		try {
+			fileData= file.readString();
+		}
+		catch(com.badlogic.gdx.utils.GdxRuntimeException e){
+			String subCause = "" + e.getCause();
+			String localFiles=Gdx.files.getLocalStoragePath();
+			if (subCause.contains("File not found")) {
+				System.out
+						.println(TAG+"Error: No Awardef file found at" + localFiles + ".");
+			} else {
+				e.printStackTrace();
+			}
+		}
+
+
 		if (MyEpicLife.DEBUG)System.out.println(TAG+"Filedata " + fileData);
 		String[] row = fileData.split("\n");
 		int i = 0;

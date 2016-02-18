@@ -1,0 +1,38 @@
+[
+{
+	"TAG": "MELEvent Class: ",
+	"uid": 1455757156751,
+	"templateUid": null,
+	"goodBad": 0,
+	"frequency": "log@1-day",
+	"firstOccurance": 1455757156750,
+	"completionList": [
+		{
+			"uid": 1,
+			"completionDate": 1455757215620,
+			"completionStatus": "completed"
+		}
+	],
+	"awardList": [
+		{
+			"uid": 1,
+			"awardedDate": 1455757227854,
+			"awardId": 1
+		}
+	],
+	"reminderPeriod": "1-day",
+	"unitType": "Portions",
+	"eventName": "Five A Day",
+	"catagoryName": "Health and Fitness",
+	"description": "Fruit and and vegetables are part of a healthy diet to ensure adequate vitamins consumption and digestive fitness. Health organisations consider a portion of fruit to be 150 g and a portion of vegetables to be 75g (excluding potatoes and other high starch tubers).",
+	"alarmTime": 0,
+	"repeat": {
+		"TAG": "REPEAT: ",
+		"repeatType": "log",
+		"repeatDuration": 1,
+		"repeatUnit": "day"
+	},
+	"nextNotification": 0,
+	"lastNotification": 0
+}
+]

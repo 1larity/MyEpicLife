@@ -48,7 +48,7 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
 	// debug for spammy outputs
 	public static  boolean DEEPDEBUG = false;
 	// system debug flag
-	public static  boolean DEBUG = false;
+	public static  boolean DEBUG = true;
 	SpriteBatch batch;
 	SoundManager soundManager;
 	Texture img;
