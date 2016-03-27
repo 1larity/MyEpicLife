@@ -11,10 +11,13 @@ import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.digitale.myepiclife.EventTemplate;
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 //** manage app event template database **//*
 public class EventTemplateData {
 	private String TAG="EVENTTEMPLATEDATA: ";
+	private boolean localDebug=false;
+
 	// ** retrieve Event template catalogue from database **//*
 	public void getEventTemplateDefinitions() {
 
@@ -27,8 +30,7 @@ public class EventTemplateData {
 		while (i < row.length) {
 
 			String[] rowData = row[i].split(";");
-			if(MyEpicLife.DEBUG)
-			System.out.println(TAG+"rowdata  " + row[i]);
+			MELDebug.log(TAG + "rowdata  " + row[i],localDebug);
 			EventTemplate thisEventTemplate = new EventTemplate();
 			try{
 			thisEventTemplate.setUid(Integer.valueOf(rowData[0]));
@@ -56,13 +58,12 @@ public class EventTemplateData {
 	            e.printStackTrace();
 	        }
 			i++;
-			
-			if (MyEpicLife.DEBUG) {
-				System.out.println(TAG+"saving template " + thisEventTemplate.getUid()
+
+			MELDebug.log(TAG + "saving template " + thisEventTemplate.getUid()
 						+ ":" + thisEventTemplate.getName() + ";"
 						+ thisEventTemplate.getGoodBad() + ";"
-						+ thisEventTemplate.getUnitType());
-			}
+						+ thisEventTemplate.getUnitType(),localDebug);
+
 
 		}
 	/*	if (MyEpicLife.DEBUG) {

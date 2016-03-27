@@ -10,9 +10,11 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 //** manage app assets database **//*
 public class AwardsData {
+	private boolean localDebug=false;
 	private String TAG = "AWARDSDATA: ";
 	// ** retrieve asset catalogue from database **//*
 	public void getAwardDefinitions() {
@@ -34,14 +36,14 @@ public class AwardsData {
 		}
 
 
-		if (MyEpicLife.DEBUG)System.out.println(TAG+"Filedata " + fileData);
+		MELDebug.log(TAG + "Filedata " + fileData, localDebug);
 		String[] row = fileData.split("\n");
 		int i = 0;
 
 		while (i < row.length) {
 
 			String[] rowData = row[i].split(",");
-			if (MyEpicLife.DEBUG)System.out.println(TAG+"rowdata  " + row[i]);
+			MELDebug.log(TAG+"rowdata  " + row[i],localDebug);
 			AwardDef thisAwardDef = new AwardDef();
 			thisAwardDef.setUid(Integer.valueOf(rowData[0]));
 			thisAwardDef.setQuality(rowData[1]);
@@ -52,21 +54,20 @@ public class AwardsData {
 			MyEpicLife.awardList.add(thisAwardDef);
 			i++;
 
-			if (MyEpicLife.DEBUG) {
-				System.out.println(TAG+"saving asset " + thisAwardDef.getUid()
+			MELDebug.log(TAG+"saving asset " + thisAwardDef.getUid()
 						+ ":" + thisAwardDef.getTitle() + ";"
-						+ thisAwardDef.getRule() + ";");
-			}
+						+ thisAwardDef.getRule() + ";",localDebug);
+
 
 		}
 		if (MyEpicLife.DEBUG) {
 			for (int j = 0; j < MyEpicLife.assetList.size(); j++) {
-				System.out.println(TAG+"assetlist " + i
+				MELDebug.log(TAG + "assetlist " + i
 						+ MyEpicLife.assetList.get(j).getUid() + ":"
 						+ MyEpicLife.assetList.get(j).getAssetName() + ";"
 						+ MyEpicLife.assetList.get(j).getFilename() + ";"
 						+ MyEpicLife.assetList.get(j).getExt() + ";"
-						+ MyEpicLife.assetList.get(j).getType());
+						+ MyEpicLife.assetList.get(j).getType(),localDebug);
 			}
 		}
 	}

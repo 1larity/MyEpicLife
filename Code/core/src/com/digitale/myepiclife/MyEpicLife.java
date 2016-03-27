@@ -37,6 +37,7 @@ import com.digitale.screens.NewEventScreen;
 import com.digitale.screens.OptionsScreen;
 import com.digitale.screens.RepeatingEventScreen;
 import com.digitale.screens.Splash;
+import com.digitale.utils.MELDebug;
 
 public class MyEpicLife implements ApplicationListener, InputProcessor {
 
@@ -127,8 +128,9 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
 	//MELEvent workspace for building new events
 	public static MELEvent workingEvent;
 	public static MELButton buttons;
+	private boolean localDebug=false;
 
-    // Define an interface for various callbacks to the android launcher
+	// Define an interface for various callbacks to the android launcher
     public interface MyGameCallback {
         public void onStartActivityA();
         public void onStartActivityB();
@@ -171,16 +173,9 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
 			eventTemplateData.getEventTemplateDefinitions();
 			MELEventLoader MELLoader = new MELEventLoader();
 			eventList=(MELEventList) MELLoader.load("eventDb.json");
-			
-			
-			if (MyEpicLife.DEBUG){
-			for(MELEvent event:eventList){
-				System.out.println(TAG+"Eventlist: "+event.getEventName());
-			}
-			}
-			
-			loadPrefs();
-			
+			for(MELEvent event:eventList) {
+                MELDebug.log(TAG + "Eventlist: " + event.getEventName(), localDebug);
+            }loadPrefs();
 			// soundManager= new SoundManager();
 			// soundManager.init();
 			setScreen(new Splash());
@@ -189,8 +184,6 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
 			callEventIntent("STARTSERVICE");
 		}
 	}
-
-	
 
 	@Override
 	public void pause() {
@@ -239,23 +232,19 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
 			switch (gameMode) {
 
 			case 4:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run game");
+				MELDebug.log("run game",localDebug);
 				// setScreen(new GameLoop());
 				break;
 			case 8:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run solar sys info");
+				MELDebug.log("run solar sys info",localDebug);
 				// setScreen(new Solar());
 				break;
 			case 9:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run help");
+				MELDebug.log("run help",localDebug);
 				// setScreen(new Help(helptext));
 				break;
 			case 13:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run market info dep");
+				MELDebug.log("run market info dep",localDebug);
 				// setScreen(new Market());
 				break;
 
@@ -271,56 +260,46 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
 			screen.dispose();}
 			// switch to requested screen
 			// the game loop
-			if (MyEpicLife.DEBUG)
-				System.out.println("running mode" + gameMode);
+			MELDebug.log("running mode" + gameMode, localDebug);
 			switch (gameMode) {
 			case 2:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run main screen");
+				MELDebug.log("run main screen", localDebug);
 				setScreen(new MainMenuScreen());
 
 				break;
 			case 3:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run calendar screen");
+				MELDebug.log("run calendar screen",localDebug);
 				setScreen(new CalendarScreen());
 				break;
 			case 4:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run award screen");
+				MELDebug.log("run award screen",localDebug);
 				setScreen(new AwardScreen());
 				break;
 			case 5:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run event list");
+				MELDebug.log("run event list",localDebug);
 				setScreen(new EventListScreen());
 				break;
 
 			case 6:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run new event wizard screen");
+				MELDebug.log("run new event wizard screen",localDebug);
 				setScreen(new NewEventScreen());
 				break;
 
 			case 7:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run options screen");
+				MELDebug.log("run options screen",localDebug);
 				setScreen(new OptionsScreen());
 				break;
 			case 8:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run help screen");
+				MELDebug.log("run help screen",localDebug);
 				//setScreen(new TestScreen());
 				setScreen(new HelpScreen(helptext));
 				break;
 			case 9:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run repeat setup screen");
+				MELDebug.log("run repeat setup screen",localDebug);
 				setScreen(new RepeatingEventScreen());
 				break;
 			case 10:
-				if (MyEpicLife.DEBUG)
-					System.out.println("run event details screen");
+				MELDebug.log("run event details screen",localDebug);
 				setScreen(new EventDetailScreen(eventintent));
 				break;
 			}
@@ -329,8 +308,8 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
 
 	}
 
-	/** Sets the current screen. {@link Screen#hide()} is called on any old
-	screen, and {@link Screen#show()} is called on the new
+	/** Sets the current screen. { Screen#hide()} is called on any old
+	screen, and { Screen#show()} is called on the new
 	screen, if any.
 	@param screen may be {@code null} **/
 
@@ -411,10 +390,10 @@ public class MyEpicLife implements ApplicationListener, InputProcessor {
     }
     @Override
 	public boolean keyDown(int keycode) {
-    	if (MyEpicLife.DEBUG)System.out.println(TAG+"key pressed"+keycode);
+    	MELDebug.log(TAG+"key pressed"+keycode,localDebug);
 	      // TODO Auto-generated method stub
 	       if(keycode == Keys.BACK){
-	    	   if (MyEpicLife.DEBUG)System.out.println(TAG+"back key pressed"); 
+	    	   MELDebug.log(TAG + "back key pressed", localDebug);
 	             // Do back button handling (show pause menu?)
 	             Gdx.app.exit(); //This will exit the app but you can add other options here as well
 	       }

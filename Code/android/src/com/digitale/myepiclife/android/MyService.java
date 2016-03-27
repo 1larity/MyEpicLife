@@ -119,6 +119,7 @@ public class MyService extends Service {
 	public void onCreate() {
 		DEBUG=MyEpicLife.DEBUG;
 		timerEnabled=DesktopTimer.timerEnabled;
+			MyEpicLife.callEventIntent("STARTSERVICE");
 		if (DEBUG)
 			System.out.println(TAG + "Start widget timer");
 		
@@ -211,11 +212,9 @@ public class MyService extends Service {
 
 	/**
 	 * Refresh widget event list from file
-	 * 
-	 * @param manager
 	 **/
 	private void updateMELData() {
-		MELEventLoader MELLoader = new MELEventLoader();
+        WidgetMELEventloader MELLoader = new WidgetMELEventloader();
 		eventList.clear();
 		eventList = (MELEventList) MELLoader.load("eventDb.json");
 		if (eventList.isEmpty()) {

@@ -6,6 +6,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonWriter;
+import com.digitale.database.MELEvent;
+import com.digitale.database.MELEventList;
 
 
 public class WidgetMELEventloader {
@@ -17,7 +19,7 @@ public class WidgetMELEventloader {
 		String path="/data/data/com.digitale.myepiclife.android/files/";
 		
 		// Persist JSON object in a Collection, in my case an ArrayList
-		ArrayList itemArrayList = new ArrayList();
+		ArrayList itemArrayList = new MELEventList();
 
 		// Setup JSON requirements
 		Json json = new Json();
@@ -34,9 +36,9 @@ public class WidgetMELEventloader {
 		
 		try {
 			FileHandle datafile =new FileHandle(path+db);
-			for (Object obj : json.fromJson(ArrayList.class, WidgetMELEvent.class,
+			for (Object obj : json.fromJson(ArrayList.class, MELEvent.class,
 					datafile)) {
-				itemArrayList.add((WidgetMELEvent) obj);
+				itemArrayList.add((MELEvent) obj);
 
 			}
 

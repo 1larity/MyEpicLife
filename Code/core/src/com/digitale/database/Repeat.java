@@ -1,8 +1,10 @@
 package com.digitale.database;
 
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 public class Repeat {
+	private final boolean localDebug=false;
 	private String TAG = "REPEAT: ";
 	private String repeatType;
 	private int repeatDuration;
@@ -20,22 +22,19 @@ public class Repeat {
 					
 					String[] row = repeatData.split("@");
 					this.setRepeatType(row[0]);
-					if (MyEpicLife.DEBUG)
-						System.out.println(TAG+"Decoded "+this.getRepeatType()+" repeat.");
+					MELDebug.log(TAG + "Decoded " + this.getRepeatType() + " repeat.",localDebug);
 					if (row.length>=2){
 					String repeatSpec = row[1];
-					if (MyEpicLife.DEBUG)
-						System.out.println(TAG+"Repeat detail data "+repeatSpec);
+						MELDebug.log(TAG+"Repeat detail data "+repeatSpec,localDebug);
 					if (repeatSpec.contains("-")) {
 						String[] abitaryRepeat = repeatSpec.split("-");
 						this.setRepeatDuration(Integer.valueOf(abitaryRepeat[0]));
 						this.setRepeatUnit(abitaryRepeat[1]);
-						if (MyEpicLife.DEBUG)
-							System.out.println(TAG+this.getRepeatType()+ "Repeat every "+this.getRepeatDuration()+":"+this.getRepeatUnit());
+						MELDebug.log(TAG + this.getRepeatType() + "Repeat every " +
+								this.getRepeatDuration() + ":" + this.getRepeatUnit(),localDebug);
 					}else{
 						this.setRepeatUnit(repeatSpec);
-						if (MyEpicLife.DEBUG)
-							System.out.println(TAG+this.getRepeatType()+ "Repeat every "+this.getRepeatUnit());
+						MELDebug.log(TAG + this.getRepeatType() + "Repeat every " + this.getRepeatUnit(),localDebug);
 					}
 					}
 	}

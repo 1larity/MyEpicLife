@@ -5,6 +5,7 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonWriter;
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,10 +13,10 @@ import java.util.ArrayList;
 
 public class MELEventLoader {
 	private String TAG = "MELEVENTLOADER: ";
+	private boolean localDebug=false;
 	/** load Json from given filename **/
 	public MELEventList load(String db) {
-		if (MyEpicLife.DEBUG)
-			System.out.println(TAG+"MELEvents loading from file: " + db);
+		MELDebug.log(TAG + "MELEvents loading from file: " + db,localDebug);
 		// Persist JSON object in a Collection, in my case an ArrayList
 		MELEventList itemArrayList = new MELEventList();
 

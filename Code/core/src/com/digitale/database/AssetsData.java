@@ -23,10 +23,12 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader.FreeTypeFontLoaderParameter;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 //** manage app assets database **//*
 public class AssetsData {
 	private String TAG="ASSETMANAGER: ";
+	private boolean localDebug=false;
 	// ** retrieve asset catalogue from database **//*
 	public void getAssetDefinitions() {
 		Resolution _568x1136 = new Resolution(568, 1136, "568x1136");
@@ -35,15 +37,14 @@ public class AssetsData {
 				new InternalFileHandleResolver(), _568x1136, _1200x1920);
 		FileHandle file = Gdx.files.internal("assets.csv");
 		String fileData = file.readString();
-		if (MyEpicLife.DEBUG)
-		System.out.println(TAG+"Filedata " + fileData);
+		MELDebug.log(TAG + "Filedata " + fileData,localDebug);
 		String[] row = fileData.split("\n");
 		int i = 0;
 
 		while (i < row.length) {
 
 			String[] rowData = row[i].split(",");
-			if (MyEpicLife.DEBUG)System.out.println(TAG+"rowdata  " + row[i]);
+			MELDebug.log(TAG+"rowdata  " + row[i],localDebug);
 			AssetDef thisAssetDef = new AssetDef();
 			thisAssetDef.setUid(Integer.valueOf(rowData[0]));
 			thisAssetDef.setAssetName(rowData[1]);
@@ -53,22 +54,21 @@ public class AssetsData {
 			MyEpicLife.assetList.add(thisAssetDef);
 			i++;
 
-			if (MyEpicLife.DEBUG) {
-				System.out.println(TAG+"saving asset " + thisAssetDef.getUid()
+			MELDebug.log(TAG+"saving asset " + thisAssetDef.getUid()
 						+ ":" + thisAssetDef.getAssetName() + ";"
 						+ thisAssetDef.getFilename() + ";"
-						+ thisAssetDef.getExt() + ";" + thisAssetDef.getType());
-			}
+						+ thisAssetDef.getExt() + ";" + thisAssetDef.getType(),localDebug);
+
 
 		}
 		if (MyEpicLife.DEBUG) {
 			for (int j = 0; j < MyEpicLife.assetList.size(); j++) {
-				System.out.println(TAG+"assetlist " + i
+				MELDebug.log(TAG + "assetlist " + i
 						+ MyEpicLife.assetList.get(j).getUid() + ":"
 						+ MyEpicLife.assetList.get(j).getAssetName() + ";"
 						+ MyEpicLife.assetList.get(j).getFilename() + ";"
 						+ MyEpicLife.assetList.get(j).getExt() + ";"
-						+ MyEpicLife.assetList.get(j).getType());
+						+ MyEpicLife.assetList.get(j).getType(),localDebug);
 			}
 		}
 	}
@@ -92,9 +92,7 @@ public class AssetsData {
 			fileName = (MyEpicLife.assetList.get(i).getFilename() + "." + MyEpicLife.assetList
 					.get(i).getExt());
 
-			if (MyEpicLife.DEBUG)
-				System.out
-						.println(TAG+"enqueue " + fileName + " type " + assetType);
+			MELDebug.log(TAG+"enqueue " + fileName + " type " + assetType,localDebug);
 			if (assetType.equals("ttf")) {
 				FreeTypeFontGenerator generator = new FreeTypeFontGenerator(
 						Gdx.files.internal("data/ui/" + fileName));
@@ -123,18 +121,15 @@ public class AssetsData {
 			} else if (assetType.equals("icon")) {
 				//MyEpicLife.manager.load("data/ui/" + fileName, Texture.class,
 				//		textureLoadParam);
-				if (MyEpicLife.DEBUG)
-					System.out.println(TAG+"icon not loaded, using button atlas " + fileName);
+				MELDebug.log(TAG+"icon not loaded, using button atlas " + fileName,localDebug);
 				//load skins
 			} else if (assetType.equals("skin")) {
 				MyEpicLife.manager.load("data/ui/" + fileName, Skin.class);
-				if (MyEpicLife.DEBUG)
-					System.out.println(TAG+"loaded " + fileName);
+				MELDebug.log(TAG + "loaded " + fileName,localDebug);
 			//load texture atlasses
 			}else if (assetType.equals("atlas")) {
 				MyEpicLife.manager.load("data/ui/" + fileName, TextureAtlas.class);
-				if (MyEpicLife.DEBUG)
-					System.out.println(TAG+"loaded " + fileName);
+				MELDebug.log(TAG + "loaded " + fileName,localDebug);
 			} else {
 
 				System.out.println(TAG+"Unrecognised asset type " + fileName

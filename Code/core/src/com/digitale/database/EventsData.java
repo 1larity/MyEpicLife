@@ -10,16 +10,19 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 //** manage user created events data **//
 public class EventsData {
+
+	private boolean localDebug=false;
 
 	// ** retrieve asset catalogue from database **//*
 	public void getEventList() {
 		FileHandle file = Gdx.files.local("MyEpicLifeData.csv");
 		
 		String fileData = file.readString();
-		System.out.println("Filedata " + fileData);
+		MELDebug.log("Filedata " + fileData, localDebug);
 		String[] row = fileData.split("\n");
 		int i = 0;
 
@@ -36,22 +39,21 @@ public class EventsData {
 			MyEpicLife.assetList.add(thisAssetDef);
 			i++;
 
-			if (MyEpicLife.DEBUG) {
-				System.out.println("saving asset " + thisAssetDef.getUid()
+			MELDebug.log("saving asset " + thisAssetDef.getUid()
 						+ ":" + thisAssetDef.getAssetName() + ";"
 						+ thisAssetDef.getFilename() + ";"
-						+ thisAssetDef.getExt() + ";" + thisAssetDef.getType());
-			}
+						+ thisAssetDef.getExt() + ";" + thisAssetDef.getType(),localDebug);
+
 
 		}
 		if (MyEpicLife.DEBUG) {
 			for (int j = 0; j < MyEpicLife.assetList.size(); j++) {
-				System.out.println("assetlist " + i
+				MELDebug.log("assetlist " + i
 						+ MyEpicLife.assetList.get(j).getUid() + ":"
 						+ MyEpicLife.assetList.get(j).getAssetName() + ";"
 						+ MyEpicLife.assetList.get(j).getFilename() + ";"
 						+ MyEpicLife.assetList.get(j).getExt() + ";"
-						+ MyEpicLife.assetList.get(j).getType());
+						+ MyEpicLife.assetList.get(j).getType(),localDebug);
 			}
 		}
 	}
@@ -68,9 +70,7 @@ public class EventsData {
 			String assetType = MyEpicLife.assetList.get(i).getType();
 			fileName = (MyEpicLife.assetList.get(i).getFilename() + "." + MyEpicLife.assetList
 					.get(i).getExt());
-			if (MyEpicLife.DEBUG)
-				System.out
-						.println("enqueue " + fileName + " type " + assetType);
+			MELDebug.log("enqueue " + fileName + " type " + assetType,localDebug);
 
 			if ((MyEpicLife.assetList.get(i).getType()).equals("font")) {
 				MyEpicLife.manager.load("data/ui/" + fileName, BitmapFont.class);

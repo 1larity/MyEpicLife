@@ -15,6 +15,7 @@ import com.digitale.database.MELEventList;
 import com.digitale.database.MELEventLoader;
 import com.digitale.database.MELEventSaver;
 import com.digitale.screens.CustomDialog;
+import com.digitale.utils.MELDebug;
 
 public class DesktopTimer implements DesktopTimerInterface {
 	private Timer timer = new Timer();
@@ -27,6 +28,8 @@ public class DesktopTimer implements DesktopTimerInterface {
 	public boolean timerStarted = false;
 	public boolean dataInvalidated = false;
 	public static boolean timerEnabled=true;
+	private boolean localDebug=false;
+
 	public void start() {
 
 		timerStarted = true;
@@ -69,17 +72,16 @@ public class DesktopTimer implements DesktopTimerInterface {
 			for (AwardDef currentAward : MyEpicLife.awardList)
 				// check event to see if award ID is not in award list
 				if (!isAlreadyAwarded(currentEvent, currentAward.getUid())) {
-					if (MyEpicLife.DEBUG)System.out.println(TAG + "Award NOT completed " + currentAward.getText()
-							+ " for event " + currentEvent.getEventName());
+					MELDebug.log(TAG + "Award NOT completed " + currentAward.getText()
+							+ " for event " + currentEvent.getEventName(), localDebug);
 
 					// if so, decode award rule
 					String[] rowData = currentAward.getRule().split("-");
 					// check for streak award
 					if (rowData[0].equals("streak")) {
-						if (MyEpicLife.DEBUG)
-							System.out.println(TAG + "Comparing for Streak "
-									+ currentAward.getText() + " for event "
-									+ currentEvent.getEventName());
+						MELDebug.log(TAG + "Comparing for Streak "
+								+ currentAward.getText() + " for event "
+								+ currentEvent.getEventName(),localDebug);
 						if (currentEvent.getStreakAward(Integer.valueOf(rowData[1]))) {
 							if (MyEpicLife.DEBUG)
 								System.out.println(TAG + "Streak Award Completed "
@@ -96,10 +98,10 @@ public class DesktopTimer implements DesktopTimerInterface {
 						}
 						// check for streak award
 					} else if (rowData[0].equals("count")) {
-						if (MyEpicLife.DEBUG)System.out.println(TAG + "Comparing for Count " + currentAward.getText()
+						MELDebug.log(TAG + "Comparing for Count " + currentAward.getText()
 								+ " for event " + currentEvent.getEventName() + "required "
 								+ currentAward.getRule() + "have "
-								+ currentEvent.getCompletedEventCount());
+								+ currentEvent.getCompletedEventCount(),localDebug);
 						if (currentEvent.getTotalAward(Integer.valueOf(rowData[1]))) {
 							if (MyEpicLife.DEBUG)
 								System.out.println(TAG + "Competion Count AwardDue "
@@ -130,16 +132,16 @@ public class DesktopTimer implements DesktopTimerInterface {
 		boolean result = false;
 		if(!currentEvent.getAwardsList().isEmpty()){
 		for (AwardedDef currentAwarded : currentEvent.getAwardsList()) {
-			if (MyEpicLife.DEBUG)System.out.println(TAG + "Award compare event: current award "
-					+ currentAwarded.getAwardId() + " Awarddef ID " + AwardID);
+			MELDebug.log(TAG + "Award compare event: current award "
+					+ currentAwarded.getAwardId() + " Awarddef ID " + AwardID,localDebug);
 			if(AwardID == currentAwarded.getAwardId()){
-				if (MyEpicLife.DEBUG)System.out.println(TAG + "Award ids match");
+				MELDebug.log(TAG + "Award ids match",localDebug);
 				result=true;
 			}
 		}
 		}else{
-			if (MyEpicLife.DEBUG)System.out.println(TAG + "Award List is empty "
-					+  " Awarddef ID " + AwardID);
+			MELDebug.log(TAG + "Award List is empty "
+					+  " Awarddef ID " + AwardID,localDebug);
 		}
 		return result;
 	}
@@ -147,7 +149,7 @@ public class DesktopTimer implements DesktopTimerInterface {
 		awardDialog = new CustomDialog(currentAward.getTitle() + " award.") {
 
 			protected void result(Object object) {
-				if (MyEpicLife.DEBUG)System.out.println(TAG + "Chosen: " + object);
+				MELDebug.log(TAG + "Chosen: " + object,localDebug);
 				String status = "unset";
 				
 				if (("" + object).equals("true")) {
@@ -214,7 +216,7 @@ public class DesktopTimer implements DesktopTimerInterface {
 		alarmDialog = new CustomDialog("Alarm " + currentEvent.getEventName()) {
 
 			protected void result(Object object) {
-				if (MyEpicLife.DEBUG)System.out.println(TAG + "Chosen: " + object);
+				MELDebug.log(TAG + "Chosen: " + object,localDebug);
 				String status = "unset";
 				if (("" + object).equals("true")) {
 					status = "completed";
@@ -259,7 +261,7 @@ public class DesktopTimer implements DesktopTimerInterface {
 		MELEventSaver EventSaver = new MELEventSaver();
 
 		for (MELEvent i : MyEpicLife.eventList) {
-			if (MyEpicLife.DEBUG)System.out.println(TAG + "Event List prior to save:" + i.getEventName());
+			MELDebug.log(TAG + "Event List prior to save:" + i.getEventName(),localDebug);
 		}
 
 		EventSaver.save("eventDb.json", MyEpicLife.eventList);

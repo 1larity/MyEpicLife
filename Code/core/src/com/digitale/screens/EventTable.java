@@ -17,10 +17,12 @@ import com.digitale.database.CompletionDef;
 import com.digitale.database.MELEvent;
 import com.digitale.myepiclife.MELCalendar;
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 public class EventTable extends Table{
 	private static final int BAD = 1;
 	private static final int GOOD = 0;
+	private final boolean localDebug=false;
 	private String TAG = "EVENTTABLE: ";
 	int screenX = Gdx.graphics.getWidth();
 	int screenY = Gdx.graphics.getHeight();
@@ -36,9 +38,8 @@ public class EventTable extends Table{
 			this.row().fill().expandX().expandY();
 			// if eventlist is empty, set event table entries to helpful text
 			if (MyEpicLife.eventList.isEmpty()) {
-				if(MyEpicLife.DEBUG)System.out
-						.println(TAG
-								+ "No missions available.\nUse the new mission button to create some.");
+				MELDebug.log(TAG
+						+ "No missions available.\nUse the new mission button to create some.",localDebug);
 				TextArea textHelp = new TextArea
 
 				(
@@ -50,11 +51,11 @@ public class EventTable extends Table{
 
 			} else {
 				// eventlist is not empty so populate summary
-				if(MyEpicLife.DEBUG)System.out.println(TAG + "Data found in eventlist");
+				MELDebug.log(TAG + "Data found in eventlist",localDebug);
 				for (final MELEvent melEvent : MyEpicLife.eventList) {
 					ImageButton buttonAddItem=null;
-					if(MyEpicLife.DEBUG)System.out.println(TAG + "Building button "
-							+ melEvent.getEventName()+"UID "+ melEvent.getUid());
+					MELDebug.log(TAG + "Building button "
+							+ melEvent.getEventName()+"UID "+ melEvent.getUid(),localDebug);
 					TextButton buttonEvent = new TextButton(
 							melEvent.getEventName(), MyEpicLife.uiSkin);
 					buttonEvent.setColor(MyEpicLife.uiColour);
@@ -110,11 +111,11 @@ public class EventTable extends Table{
 									"View " + MyEpicLife.eventName+"?") {
 
 								protected void result(Object object) {
-									if (MyEpicLife.DEBUG)System.out.println(TAG + "Chosen: " + object);
+									MELDebug.log(TAG + "Chosen: " + object,localDebug);
 									if (("" + object).equals("true")) {
-										if (MyEpicLife.DEBUG)System.out.println(TAG
+										MELDebug.log(TAG
 												+ "Launch View Event Details "
-												+ melEvent.getEventName()+" "+melEvent.getUid());
+												+ melEvent.getEventName()+" "+melEvent.getUid(),localDebug);
 										MyEpicLife.eventintent=melEvent.getUid();
 										MyEpicLife.gameMode = 10;
 										MyEpicLife.screen.setDone(true);
@@ -145,10 +146,10 @@ public class EventTable extends Table{
 									"Update log for "+melEvent.getEventName()) {
 
 								protected void result(Object object) {
-									if (MyEpicLife.DEBUG)System.out.println(TAG + "Chosen: " + object);
+									MELDebug.log(TAG + "Chosen: " + object,localDebug);
 									if (("" + object).equals("true")) {
-										MyEpicLife.eventList.addCompletion(melEvent.getUid(),new CompletionDef(melEvent.getCompletionList().size()+1,
-												MELCalendar.MELGetDate(),"completed"));
+										MyEpicLife.eventList.addCompletion(melEvent.getUid(), new CompletionDef(melEvent.getCompletionList().size() + 1,
+												MELCalendar.MELGetDate(), "completed"));
 									}
 								}
 							};
@@ -167,10 +168,10 @@ public class EventTable extends Table{
 
 						
 						}
-					}); 
-					
-					if(MyEpicLife.DEBUG)System.out.println(TAG + "Populating Event table with "
-							+ melEvent.getEventName());
+					});
+
+					MELDebug.log(TAG + "Populating Event table with "
+						+ melEvent.getEventName(),localDebug);
 				}
 
 			}

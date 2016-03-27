@@ -47,9 +47,10 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Array;
 import com.digitale.myepiclife.DesktopTimer;
 import com.digitale.myepiclife.MyEpicLife;
+import com.digitale.utils.MELDebug;
 
 public class Splash extends MyEpicLifeScreen {
-
+	public boolean localDebug=false;
 	OrthographicCamera camera;
 	SplashData data = new SplashData(1);
 	/** the renderer **/
@@ -126,6 +127,8 @@ public class Splash extends MyEpicLifeScreen {
 		loading = true;
 		
 		timer.scheduleAtFixedRate(new TimerTask() {
+
+
 			public void run() {
 				i++;
 
@@ -136,8 +139,7 @@ public class Splash extends MyEpicLifeScreen {
 				}
 				if (fadeIn) {
 					fadeTimer = fadeTimer - 0.1f;
-					if (MyEpicLife.DEBUG)
-						System.out.println("fade " + fadeTimer);
+					MELDebug.log("fade " + fadeTimer, localDebug);
 				}
 				if (fadeIn && fadeTimer < 0) {
 					fadeIn = false;
@@ -150,8 +152,7 @@ public class Splash extends MyEpicLifeScreen {
 				}
 				if (fadeOut) {
 					fadeTimer = fadeTimer + 0.1f;
-					if (MyEpicLife.DEBUG)
-						System.out.println("fade " + fadeTimer);
+					MELDebug.log("fade " + fadeTimer,localDebug);
 				}
 				if (i > 100) {
 					fadeTimer = 1;
@@ -159,17 +160,15 @@ public class Splash extends MyEpicLifeScreen {
 
 				if (i % 10 == 0 && data.loadstate == (int) i / 10
 						&& MyEpicLife.Error == MyEpicLife.ALL_OK) {
-					if (MyEpicLife.DEBUG)
-						System.out.println("loading stage " + (int) i / 10);
+					MELDebug.log("loading stage " + (int) i / 10,localDebug);
 					incrementalloader((int) i / 10);
 
 				}
 				if (i == 1) {
 					// SoundManager.playmusic();
 				}
-				if (MyEpicLife.DEBUG)
-					System.out.println("timer " + i % 10 + "  div" + (int) i
-							/ 10 + " loadstate " + data.loadstate);
+				MELDebug.log("timer " + i % 10 + "  div" + (int) i
+						/ 10 + " loadstate " + data.loadstate,localDebug);
 			}
 		}, 0, 100);
 
@@ -242,8 +241,8 @@ public class Splash extends MyEpicLifeScreen {
 			if (Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
 				dirlight2.set(0.49f, 0.0f, 0.0f, Gdx.input.getX(),
 						Gdx.input.getY(), 100f);
-				System.out.println("x:" + Gdx.input.getX() + "  y:"
-						+ Gdx.input.getY());
+				MELDebug.log("x:" + Gdx.input.getX() + "  y:"
+					+ Gdx.input.getY(),localDebug);
 			}
 
 			// dirlight1.set(0.9f, 0.9f, 0.9f, -100f, -8f, -2f);
@@ -268,7 +267,7 @@ public class Splash extends MyEpicLifeScreen {
 				
 			}
 
-			if (MyEpicLife.DEBUG)System.out.println("loading progress " + progress);
+			MELDebug.log("loading progress " + progress,localDebug);
 			renderHud();
 		}
 	}
