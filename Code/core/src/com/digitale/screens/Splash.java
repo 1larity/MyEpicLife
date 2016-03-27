@@ -18,6 +18,7 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.PerspectiveCamera;
+import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Pixmap.Format;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
@@ -34,7 +35,10 @@ import com.badlogic.gdx.graphics.g3d.ModelBatch;
 import com.badlogic.gdx.graphics.g3d.ModelInstance;
 import com.badlogic.gdx.graphics.g3d.attributes.ColorAttribute;
 import com.badlogic.gdx.graphics.g3d.environment.DirectionalLight;
+import com.badlogic.gdx.graphics.g3d.environment.DirectionalShadowLight;
 import com.badlogic.gdx.graphics.g3d.utils.CameraInputController;
+import com.badlogic.gdx.graphics.g3d.utils.DepthShaderProvider;
+import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.ProgressBar;
@@ -49,8 +53,8 @@ import com.digitale.myepiclife.DesktopTimer;
 import com.digitale.myepiclife.MyEpicLife;
 import com.digitale.utils.MELDebug;
 
-public class Splash extends MyEpicLifeScreen {
-	public boolean localDebug=false;
+public class Splash extends MyEpicLifeScreen{
+	public boolean localDebug=true;
 	OrthographicCamera camera;
 	SplashData data = new SplashData(1);
 	/** the renderer **/
@@ -76,18 +80,18 @@ public class Splash extends MyEpicLifeScreen {
 	private boolean netErrorShown = false;
 	public static float planetmove;
 	public PerspectiveCamera cam;
-	public DirectionalLight dirlight1;
-	public DirectionalLight dirlight2;
 	public CameraInputController camController;
 	public ModelBatch modelBatch;
+    public ModelBatch shadowBatch;
 	public AssetManager assets;
 	public Array<ModelInstance> instances = new Array<ModelInstance>();
 	public Environment environment;
 	public boolean loading;
 	private float progress;
 	protected boolean doneflag=false;
+    DirectionalShadowLight shadowLight;
 	Stage stage;
-	int screenX=Gdx.graphics.getWidth();
+	int screenX= Gdx.graphics.getWidth();
 	int screenY=Gdx.graphics.getHeight();
 	ProgressBar loadProgressBar;
 	Label labelProgressPercent;
@@ -100,32 +104,31 @@ public class Splash extends MyEpicLifeScreen {
 		spriteBatch = new SpriteBatch();
 		modelBatch = new ModelBatch();
 		environment = new Environment();
-		dirlight1 = new DirectionalLight().set(0.9f, 0.9f, 0.9f, -40f, -229,
-				-200f);
-		dirlight2 = new DirectionalLight().set(0.7f, 0.0f, 0.0f, -270f, 314,
-				200f);
-		environment.set(new ColorAttribute(ColorAttribute.AmbientLight, 0.6f,
-				0.6f, 0.6f, 1f));
-		environment.add(dirlight1);
-		environment.add(dirlight2);
+
+		environment.set(new ColorAttribute(ColorAttribute.AmbientLight, .4f, .4f, .4f, 1f));
+		environment.add((shadowLight = new DirectionalShadowLight(1024, 1024, 30f, 30f, 1f, 100f)).set(0.8f, 0.8f, 0.8f, 0f, 0f,
+				-30f));
+		environment.shadowMap = shadowLight;
+
 		progressBarTexture = new Texture(
-				Gdx.files.internal("data/progbar.png"), Format.RGB565, true);
+				Gdx.files.internal("data/progbar.png"), Pixmap.Format.RGB565, true);
 		progressBarTexture
-				.setFilter(TextureFilter.MipMap, TextureFilter.Linear);
-		cam = new PerspectiveCamera(42, Gdx.graphics.getWidth(),
+				.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Linear);
+		cam = new PerspectiveCamera(60, Gdx.graphics.getWidth(),
 				Gdx.graphics.getHeight());
-		cam.position.set(00f, -00f, 290f);
+		cam.position.set(00f, -00f, 200f);
 		cam.lookAt(0, 0, 1);
-		cam.near = 1f;
-		cam.far = 4000f;
+		cam.near = .5f;
+		cam.far = 250f;
 		cam.update();
 		/**splash screen assets**/
 		assets = new AssetManager();
-	//	assets.load("data/ground.g3db", Model.class);
-		assets.load("data/bgplane.g3db", Model.class);
+		assets.load("data/ground.g3db", Model.class);
+		assets.load("data/wall.g3db", Model.class);
 		assets.load("data/newtitle.g3db", Model.class);
+        shadowBatch = new ModelBatch(new DepthShaderProvider());
 		loading = true;
-		
+
 		timer.scheduleAtFixedRate(new TimerTask() {
 
 
@@ -170,7 +173,7 @@ public class Splash extends MyEpicLifeScreen {
 				MELDebug.log("timer " + i % 10 + "  div" + (int) i
 						/ 10 + " loadstate " + data.loadstate,localDebug);
 			}
-		}, 0, 100);
+		}, 0, 500);
 
 	}
 
@@ -193,7 +196,7 @@ public class Splash extends MyEpicLifeScreen {
 		loadProgressBar.setStyle(barStyle);
 		stackProgress.add(labelProgressPercent);
 		stackProgress.add(loadProgressBar);
-		
+
 		stackProgress.layout();
 		Table loadScreenTable = new Table();
 		//loadScreenTable.debugAll();
@@ -208,7 +211,7 @@ public class Splash extends MyEpicLifeScreen {
 		loadScreenTable.row().fill().expandX();
 		loadScreenTable.add(labelVersion).width(screenX/2);
 		loadScreenTable.layout();
-		
+
 		stage.addActor(loadScreenTable);
 	}
 
@@ -220,13 +223,13 @@ public class Splash extends MyEpicLifeScreen {
 		modelBatch.dispose();
 		instances.clear();
 		assets.dispose();
-		
+
 	}
 
 	@Override
 	public boolean isDone() {
-			MyEpicLife.gameMode = 2;
-			return doneflag;
+		//	MyEpicLife.gameMode = 2;
+			return false;//doneflag;
 	}
 
 	@Override
@@ -234,21 +237,24 @@ public class Splash extends MyEpicLifeScreen {
 		/** If splash assets are not loaded call assetloader **/
 		if (loading && assets.update()) {
 			doneLoadingSplash();
-		} 
-			
+		}
+
 		if (assets.isLoaded("data/newtitle.g3db")){
 			// camController.update();
-			if (Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-				dirlight2.set(0.49f, 0.0f, 0.0f, Gdx.input.getX(),
-						Gdx.input.getY(), 100f);
-				MELDebug.log("x:" + Gdx.input.getX() + "  y:"
-					+ Gdx.input.getY(),localDebug);
-			}
-
-			// dirlight1.set(0.9f, 0.9f, 0.9f, -100f, -8f, -2f);
+            if (Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                shadowLight.set(1f, 1f, 1f,-( Gdx.input.getX()-600),
+                        Gdx.input.getY()-400, -30f);
+                MELDebug.log("x:" + Gdx.input.getX() + "  y:"
+                        + Gdx.input.getY(),localDebug);
+            }
 			Gdx.gl.glViewport(0, 0, Gdx.graphics.getWidth(),
-					Gdx.graphics.getHeight());
+                    Gdx.graphics.getHeight());
 			Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
+            shadowLight.begin(Vector3.Zero, cam.direction);
+            shadowBatch.begin(shadowLight.getCamera());
+            shadowBatch.render(instances);
+            shadowBatch.end();
+            shadowLight.end();
 
 			modelBatch.begin(cam);
 			modelBatch.render(instances, environment);
@@ -259,25 +265,25 @@ public class Splash extends MyEpicLifeScreen {
 				timer.cancel();
 				doneflag = true;
 				MyEpicLife.buttons=new MELButton();
-				
-				MyEpicLife.desktopTimer =new DesktopTimer();
-				
-				
-					MyEpicLife.desktopTimer.start();
-				
+
+			//	MyEpicLife.desktopTimer =new DesktopTimer();
+
+
+			//		MyEpicLife.desktopTimer.start();
+
 			}
 
-			MELDebug.log("loading progress " + progress,localDebug);
+			//MELDebug.log("loading progress " + progress,localDebug);
 			renderHud();
 		}
 	}
-	
-	
+
+
 	/** render 2d elements in front of 3d scene**/
 	private void renderHud() {
 		Gdx.gl.glDisable(GL20.GL_CULL_FACE);
 		Gdx.gl.glDisable(GL20.GL_DEPTH_TEST);
-		
+
 		/** calculate and update progress bar and label**/
 		loadProgressBar.setValue(progress*100);
 		labelProgressPercent.setText("Loading "+ (int)(progress*100));
@@ -297,37 +303,37 @@ public class Splash extends MyEpicLifeScreen {
 			spriteBatch.setColor(1, 1, 1, Splash.fadeTimer);
 			spriteBatch.draw(xfadeTexture, 0, 0, screenX,screenY);
 		}
-		
-		
+
+
 		spriteBatch.end();
 		/*
 		 * if (MyEpicLife.Error==MyEpicLife.NETWORK_DOWN &&
 		 * netErrorShown==false){ stage.addActor(Actors.bottomToast(
 		 * "Connection to internet failed, Please check your network is working."
 		 * , 5, skin));
-		 * 
+		 *
 		 * netErrorShown=true; }
 		 */
 
 	}
 	/**Instance splash screen assets**/
 	private void doneLoadingSplash() {
-	//	Model ground = assets.get("data/ground.g3db", Model.class);
-
-	/*	ModelInstance groundInstance = new ModelInstance(ground);
+		Model ground = assets.get("data/ground.g3db", Model.class);
+		ModelInstance groundInstance = new ModelInstance(ground);
 		groundInstance.transform.setToTranslation(0, 0, 0);
-		instances.add(groundInstance);*/
+		instances.add(groundInstance);
 
-		Model wall = assets.get("data/bgplane.g3db", Model.class);
+		Model wall = assets.get("data/wall.g3db", Model.class);
 		ModelInstance wallInstance = new ModelInstance(wall);
 		wallInstance.transform.setToTranslation(0, 0, 0);
 		instances.add(wallInstance);
 
-		Model title = assets.get("data/newtitle.g3db", Model.class);
-		ModelInstance titleInstance = new ModelInstance(title);
+    	Model title = assets.get("data/newtitle.g3db", Model.class);
+    	ModelInstance titleInstance = new ModelInstance(title);
 		titleInstance.transform.setToTranslation(0, 0, 0);
 		instances.add(titleInstance);
 		/**done preparing splash assets**/
+
 		loading = false;
 	}
 
@@ -339,7 +345,7 @@ public class Splash extends MyEpicLifeScreen {
 		 * case 3: //load some stuff MyEpicLife.loadstage03(); //increment
 		 * loaded flag loadstate=4; break; case 4: //load some stuff
 		 * MyEpicLife.loadstage04(); //increment loaded flag loadstate=5; break;
-		 * 
+		 *
 		 * case 5: //load some stuff MyEpicLife.loadstage05(); //increment
 		 * loaded flag loadstate=6; break; case 6: //load some stuff
 		 * MyEpicLife.loadstage06(); //increment loaded flag loadstate=7; break;
@@ -356,7 +362,7 @@ public class Splash extends MyEpicLifeScreen {
 
 	@Override
 	public void update(float delta) {
-		
+
 		cameraHorizAngle = cameraHorizAngle + (rotationspeed * delta);
 		planetmove = planetmove + (delta * planetspeed);
 		// System.out.println("planet x="+planetmove);
@@ -365,7 +371,7 @@ public class Splash extends MyEpicLifeScreen {
 	@Override
 	public void resize(int width, int height) {
 		// TODO Auto-generated method stub
-		
+
 
 	}
 
@@ -402,7 +408,7 @@ public class Splash extends MyEpicLifeScreen {
 	@Override
 	public void setDone(boolean b) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }

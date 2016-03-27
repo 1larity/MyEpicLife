@@ -43,10 +43,8 @@ public class DesktopTimer implements DesktopTimerInterface {
 				if (timerEnabled==true){
 				MELEventLoader MELLoader = new MELEventLoader();
 				alarmList = (MELEventList) MELLoader.load("eventDb.json");
-				if (MyEpicLife.DEBUG){
-					System.out.println(TAG + "dialog showing " + dialogShowing);
-				System.out.println("Tick-Tock");
-				}
+				MELDebug.log(TAG + "dialog showing " + dialogShowing,localDebug);
+
 				if (Gdx.app.getType() == ApplicationType.Desktop) {
 					// Do timer stuff for desktop
 					checkAlarms();
@@ -63,8 +61,7 @@ public class DesktopTimer implements DesktopTimerInterface {
 
 
 	private void checkAwards() {
-		if (MyEpicLife.DEBUG)
-			System.out.println(TAG + "Checking awards");
+		MELDebug.log(TAG + "Checking awards", localDebug);
 		// have to local copy of global event list or concurrent
 		// access errors will occur
 		for (MELEvent currentEvent : alarmList) {
@@ -103,9 +100,8 @@ public class DesktopTimer implements DesktopTimerInterface {
 								+ currentAward.getRule() + "have "
 								+ currentEvent.getCompletedEventCount(),localDebug);
 						if (currentEvent.getTotalAward(Integer.valueOf(rowData[1]))) {
-							if (MyEpicLife.DEBUG)
-								System.out.println(TAG + "Competion Count AwardDue "
-										+ currentEvent.getEventName() + dialogShowing);
+							MELDebug.log(TAG + "Competion Count AwardDue "
+									+ currentEvent.getEventName() + dialogShowing, localDebug);
 							// play alarm sound
 
 							// prepare dialog

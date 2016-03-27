@@ -41,8 +41,7 @@ public class MELEventLoader {
 		} catch (com.badlogic.gdx.utils.SerializationException e) {
 			String subCause = "" + e.getCause().getCause();
 			if (subCause.contains("File not found")) {
-				System.out
-						.println(TAG+"No Event data file present (probable first run).");
+				MELDebug.log(TAG + "No Event data file present (probable first run).",localDebug);
 			} else {
 				e.printStackTrace();
 			}
